@@ -51,8 +51,8 @@ function getStringLength(value) {
  *   'John','Doe'      => 'Hello, John Doe!'
  *   'Chuck','Norris'  => 'Hello, Chuck Norris!'
  */
-function getStringFromTemplate(firstName, lastName) {
-  return ('Hello, ' + firstName + ' ' + lastName + '!');
+function getStringFromTemplate(/* firstName, lastName */) {
+  throw new Error('Not implemented');
 }
 
 /**
@@ -65,8 +65,9 @@ function getStringFromTemplate(firstName, lastName) {
  *   'Hello, John Doe!' => 'John Doe'
  *   'Hello, Chuck Norris!' => 'Chuck Norris'
  */
-function extractNameFromTemplate(/* value */) {
-  throw new Error('Not implemented');
+function extractNameFromTemplate(value) {
+  var value1 = value.replace(/.*\Hello, /, '');
+  return (value1.replace(/!/g, ''));
 }
 
 
