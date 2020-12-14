@@ -291,4 +291,3 @@ module.exports = {
   isString,
   getCardId,
 };
-
