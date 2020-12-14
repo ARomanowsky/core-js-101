@@ -82,6 +82,7 @@ function getPasswordValidator(minLength) {
   return new RegExp(`^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)[A-Za-z\\d]{${minLength},}$`);
 }
 
+
 module.exports = {
   getRegexForGuid,
   getRegexForPitSpot,
